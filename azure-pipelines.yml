@@ -14,9 +14,8 @@ steps:
   displayName: 'Run a one-line script'
 - script: |
     displayName: 'Install NodeJS'
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-    nvm install --lts
-    nvm use --lts
+    curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+    node -v
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
