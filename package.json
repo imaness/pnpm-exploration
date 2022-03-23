@@ -4,7 +4,9 @@
   "description": "Personall exploring how pnpm works",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "start": "node ./lib/index.js",
+    "test": "pnpm test -r",
+    "build": "pnpm build -r"
   },
   "repository": {
     "type": "git",
