@@ -13,9 +13,11 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 - script: |
-    displayName: 'Install NodeJS'
     curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+    sudo apt-get update
+    sudo apt-get install nodejs
     node -v
+  displayName: 'Install NodeJS'
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
