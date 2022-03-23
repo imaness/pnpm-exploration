@@ -19,10 +19,10 @@ steps:
     npm install pnpm -g
   displayName: 'Install NodeJS'
 - script: |
-  pnpm install
+    pnpm install
   displayName:  'Install NodeJS packages'
 - script: |
-  pnpm run test -r
+    pnpm run test -r
   displayName:  'Run test'
 - script: |
     echo Add other tasks to build, test, and deploy your project.
