@@ -13,7 +13,9 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 - script: |
-    sudo apt install nodejs
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+    nvm install --lts
+    nvm use --lts
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
