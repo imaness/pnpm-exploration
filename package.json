@@ -1,0 +1,22 @@
+{
+  "name": "pnpm-exploration",
+  "version": "1.0.0",
+  "description": "Personall exploring how pnpm works",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imaness/pnpm-exploration.git"
+  },
+  "author": "soriano.ej@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imaness/pnpm-exploration/issues"
+  },
+  "homepage": "https://github.com/imaness/pnpm-exploration#readme",
+  "devDependencies": {
+    "eslint": "^8.11.0"
+  }
+}
