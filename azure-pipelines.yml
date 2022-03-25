@@ -10,14 +10,11 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- task: NodeTool@0 
+  inputs:
+    versionSpec: '16.14.2'
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-- script: |
-    curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-    sudo apt-get update
-    sudo apt-get install nodejs
-    npm install pnpm -g
-  displayName: 'Install NodeJS'
 - script: |
     pnpm install
   displayName:  'Install NodeJS packages'

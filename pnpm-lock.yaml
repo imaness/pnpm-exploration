@@ -6,21 +6,35 @@ importers:
     specifiers:
       eslint: ^8.11.0
       turbo: ^1.1.10
+      typescript: ^4.6.2
     devDependencies:
       eslint: 8.11.0
       turbo: 1.1.10
+      typescript: 4.6.2
 
   packages/package-a:
     specifiers:
+      '@types/lodash': ^4.14.180
+      lodash: ^4.17.21
       typescript: ^4.6.2
     dependencies:
+      lodash: 4.17.21
+    devDependencies:
+      '@types/lodash': 4.14.180
       typescript: 4.6.2
 
   packages/package-b:
     specifiers:
+      '@types/lodash': ^4.14.180
+      lodash: ^4.17.21
       package-a: workspace:^1.0.0
+      typescript: ^4.6.2
     dependencies:
+      lodash: 4.17.21
       package-a: link:../package-a
+    devDependencies:
+      '@types/lodash': 4.14.180
+      typescript: 4.6.2
 
 packages:
 
@@ -54,6 +68,10 @@ packages:
 
   /@humanwhocodes/object-schema/1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: true
+
+  /@types/lodash/4.14.180:
+    resolution: {integrity: sha512-XOKXa1KIxtNXgASAnwj7cnttJxS4fksBRywK/9LzRV5YxrF80BXZIGeQSuoESQ/VkUj30Ae0+YcuHc15wJCB2g==}
     dev: true
 
   /acorn-jsx/5.3.2_acorn@8.7.0:
@@ -417,6 +435,10 @@ packages:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: true
 
+  /lodash/4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+    dev: false
+
   /minimatch/3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
     dependencies:
@@ -659,7 +681,7 @@ packages:
     resolution: {integrity: sha512-HM/hFigTBHZhLXshn9sN37H085+hQGeJHJ/X7LpBWLID/fbc2acUMfU+lGD98X81sKP+pFa9f0DZmCwB9GnbAg==}
     engines: {node: '>=4.2.0'}
     hasBin: true
-    dev: false
+    dev: true
 
   /uri-js/4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}

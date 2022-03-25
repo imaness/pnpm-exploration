@@ -1,0 +1,6 @@
+lib/
+node_modules/
+.turbo/
+*.log
+Dockerfile
+azure-pipelines.yml
