@@ -21,7 +21,10 @@ steps:
     pnpm install
   displayName:  'Install pnpm and NodeJS packages'
 - script: |
-    pnpm run test -r
+    pnpm run build
+  displayName:  'Run Build'
+- script: |
+    pnpm run test
   displayName:  'Run test'
 - script: |
     echo Add other tasks to build, test, and deploy your project.
