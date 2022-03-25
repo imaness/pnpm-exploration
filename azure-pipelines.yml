@@ -25,3 +25,6 @@ steps:
 - script: |
     pnpm run test
   displayName:  'Run test'
+- script: |
+    docker build -t pnpm-exploration . 
+  displayName:  'Run Docker'

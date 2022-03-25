@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-COPY ./packages/package-b .
+COPY . .
 
 RUN apt-get update
 RUN apt-get install -y curl
@@ -10,6 +10,6 @@ RUN apt-get install -y nodejs
 
 RUN npm install pnpm -g
 
-WORKDIR /package/package-a
-
 RUN pnpm install 
+
+RUN pnpm run build
