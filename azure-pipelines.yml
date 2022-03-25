@@ -15,7 +15,6 @@ steps:
     versionSpec: '16.14.2'
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-  displayName: 'Install NodeJS'
 - script: |
     npm install pnpm -g
     pnpm install
