@@ -1,5 +1,7 @@
 FROM ubuntu:18.04
 
+WORKDIR /opt/app/
+
 COPY . .
 
 RUN apt-get update
@@ -10,6 +12,4 @@ RUN apt-get install -y nodejs
 
 RUN npm install pnpm -g
 
-RUN pnpm install 
-
-RUN pnpm run build
+RUN pnpm install
